@@ -39,7 +39,7 @@
 </div>
 
 <script>
-const dates = [{% for i in tab %} '{{i.dt}}', {% endfor %}];
+const dates = [{% for i in tab %} '{{ i.dt}}', {% endfor %}];
 const datas = [{% for i in tab %} '{{i.temp}}', {% endfor %}];
 var ctx = document.getElementById('myAreaChart').getContext('2d');
 var myChart = new Chart(ctx, {
