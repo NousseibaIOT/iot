@@ -19,7 +19,7 @@
     <div class="container">
       <div class="menu">
         <div class="logo">
-          <img src="{% static 'images/thermometer.png'%}" width="30px" />
+          <img src="{% static 'images/thermo.png'%}" width="50px"  />
           <p><a href="{% url 'data'%}">.TempApp</a></p>
         </div>
         <ul>
@@ -34,6 +34,7 @@
       <div class="stats-container">
         <div class="table-container">
           <h1 style="margin-bottom: 10px">Données Collectées durant le premier jour:</h1>
+          <span class="titre"><img src="{% static 'images/graphe.png'%}" width="30px" /><a href="{% url 'jr3Graphe'%}"> Voir graphe </a></span>
           <table>
             <tr>
               <th class="n">N</th>
@@ -51,7 +52,6 @@
               {%endfor%}
             </tbody>
           </table>
-          <span class="titre"><img src="{% static 'images/thermometer.png'%}" width="30px" /><a href="{% url 'jr1Graphe'%}"> Voir graphe </a></span>
         </div>
       </div>
     </div>
