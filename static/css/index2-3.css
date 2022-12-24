@@ -107,8 +107,15 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   font-size:larger;
   color: black;
-}
+  display:block;
+  float:left;
+   text-align:center;
 
+}
+.liste ul{
+   margin-left:2px;
+   float:left;
+}
 .titre a {
    font-size:x-large;
   text-align:center;
