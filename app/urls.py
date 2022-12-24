@@ -12,7 +12,7 @@ urlpatterns = [
  path('jr3/', views.data72, name='jr3'),
  path('jr3Graphe/', views.data72Graphe, name='jr3Graphe'),
  path('historique/', views.historique, name='historique'),
-
+ path('essaie/', views.essaie, name='essaie'),
 
 
 ##api

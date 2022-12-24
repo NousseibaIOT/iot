@@ -46,6 +46,8 @@ def data72Graphe(request):
 #historique
 def historique(request):
     return render(request, 'historique.html')
+def essaie(request):
+    return render(request, 'essaie.html')
 
 
 
