@@ -22,11 +22,11 @@
           <img src="{% static 'images/thermo.png'%}" width="60px" />
           <p><a href="{% url 'data'%}"><h2>.TempApp</h2></p>
         </div>
+        <p class="tempact"> <h8> {{tab.last}} <span>°C</span></h8></p>
         <ul>
-          <li><p class="tempact"> <h8> {{tab.last}} <span>°C</span></h8></p></li>
           <li><a href="{% url 'data'%}">Page d'acceuil</a></li>
           <li><a href="{% url 'data2'%}">Temperatures collectées </a></li>
-          <li><a href="{% url 'data3'%}">Graphe</a></li>
+          <li><a href="{% url 'data3'%}">Graphe</a></li><br>
           <li><a href="{% url 'historique'%}">Historique</a></li>
         </ul>
         <span>2022©Nousseiba Gaouche</span>
