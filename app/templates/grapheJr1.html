@@ -19,12 +19,12 @@
     <div class="container">
       <div class="menu">
         <div class="logo">
-          <img src="{% static 'images/thermo.png'%}" width="60px"  />
+          <img src="{% static 'images/thermo1.png'%}" width="60px"  />
           <p><a href="{% url 'data'%}"><h2>.TempApp</h2></a></p>
         </div>
         <ul>
          <li><a href="{% url 'data'%}">Page d'acceuil</a></li>
-          <li><a href="{% url 'data2'%}">Temperatures collectées </a></li>
+          <li><a href="{% url 'data2'%}">Températures collectées </a></li>
           <li><a href="{% url 'data3'%}">Graphe</a></li><br>
           <li><a href="{% url 'historique'%}">Historique</a></li>
         </ul>
@@ -39,8 +39,8 @@
 </div>
 
 <script>
-const dates = [{% for i in jr1 %} '{{i.dt}}', {% endfor %}];
-const datas = [{% for i in jr1 %} '{{i.temp}}', {% endfor %}];
+const dates = [{% for i in tab %} '{{i.dt}}', {% endfor %}];
+const datas = [{% for i in tab %} '{{i.temp}}', {% endfor %}];
 var ctx = document.getElementById('myAreaChart').getContext('2d');
 var myChart = new Chart(ctx, {
 type: 'line',
@@ -51,13 +51,12 @@ datasets: [{
 label: 'Temperature',
 data:datas,
 backgroundColor: [
-'rgba(34,96,162, 0.2)'
+'rgba(106,220,210,0.2)'
 ],
 
 borderColor: [
-'  #cc0000',
-],
-borderWidth:  2
+'#cc0000',
+],borderWidth:  2
 }]
 },
 options: {

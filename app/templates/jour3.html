@@ -19,12 +19,12 @@
     <div class="container">
       <div class="menu">
         <div class="logo">
-          <img src="{% static 'images/thermo.png'%}" width="60px"/>
+          <img src="{% static 'images/thermo1.png'%}" width="60px"/>
           <p><a href="{% url 'data'%}"><h2>.TempApp</h2></p>
         </div>
         <ul>
           <li><a href="{% url 'data'%}">Page d'acceuil</a></li>
-          <li><a href="{% url 'data2'%}">Temperatures collectées </a></li>
+          <li><a href="{% url 'data2'%}">Températures collectées </a></li>
           <li><a href="{% url 'data3'%}">Graphe</a></li><br>
           <li><a href="{% url 'historique'%}">Historique</a></li>
         </ul>
@@ -33,7 +33,7 @@
       <div class="stats-container">
         <div class="table-container">
           <h1 style="margin-bottom: 10px">Données Collectées durant le premier jour:</h1>
-          <span class="titre"><img src="{% static 'images/graphe.png'%}" width="30px" /><a href="{% url 'jr3Graphe'%}"> Voir graphe </a></span>
+          <span class="titre"><img src="{% static 'images/gra.png'%}" width="40px" /><a href="{% url 'jr3Graphe'%}"> Voir graphe </a></span>
           <table>
             <tr>
               <th class="n">N</th>

@@ -19,13 +19,13 @@
     <div class="container">
       <div class="menu">
         <div class="logo">
-          <img src="{% static 'images/thermo.png'%}" width="60px" />
-          <p><a href="{% url 'data'%}"><h2>.TempApp</h2></p>
+          <img src="{% static 'images/thermo1.png'%}" width="60px" />
+          <p><a href="{% url 'data'%}"><h2>TempApp</h2></p>
         </div>
-        <p class="tempact"> <h8> {{tab.last}} <span>°C</span></h8></p>
+        <button><p class="tempact"> <h8> {{tab.last}} <span>°C</span></h8></p></button>
         <ul>
           <li><a href="{% url 'data'%}">Page d'acceuil</a></li>
-          <li><a href="{% url 'data2'%}">Temperatures collectées </a></li>
+          <li><a href="{% url 'data2'%}">Températures collectées </a></li>
           <li><a href="{% url 'data3'%}">Graphe</a></li><br>
           <li><a href="{% url 'historique'%}">Historique</a></li>
         </ul>
@@ -52,7 +52,7 @@ datasets: [{
 label: 'Temperature',
 data:datas,
 backgroundColor: [
-'rgba(34,96,162, 0.2)'
+'rgba(106,220,210,0.2)'
 ],
 
 borderColor: [
