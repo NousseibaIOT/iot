@@ -32,7 +32,8 @@
       </div>
       <div class="stats-container">
         <div class="table-container">
-          <h1 style="margin-bottom: 10px">Données Collectées :</h1>
+          <h1 style="margin-bottom: 10px">Données Collectées : </h1>
+           <button class="csv" type="button" onclick="tableToCSV()"><a href="{% url 'csv'%}"> Download CSV</a></button>
           <table>
             <tr>
               <th class="n">N</th>
@@ -48,9 +49,6 @@
               {%endfor%}
               </tbody>
           </table>
-          <button class="csv" type="button" onclick="tableToCSV()">
-            download CSV
-        </button>
         </div>
       </div>
     </div>
