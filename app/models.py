@@ -34,7 +34,7 @@ class Dht(models.Model):
                 ['nousseibagaouche3@gmail.com'],
                 fail_silently=False)
 
-        if self.temp < 12:
+        if self.temp > 12:
         #envoie sur wtp
             import pywhatkit as kit
             kit.sendwhatmsg_instantly(f'+212696866998', "attention temperature critique! la temperature est a " + str(self.temp), 15, True)
