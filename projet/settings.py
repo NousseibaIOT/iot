@@ -127,7 +127,7 @@ EMAIL_HOST_USER = 'nousseiba.gaouche@ump.ac.ma'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD ='******'
+EMAIL_HOST_PASSWORD ='Azer1234'
 import os
 STATIC_URL='/static/'
 STATICFILES_DIRS = [ os.path.join(BASE_DIR,"static")]
