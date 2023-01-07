@@ -37,11 +37,11 @@ def data48Graphe(request):
 #jour3
 def data72(request):
     #jr1=Dht.objects.filter(temp__range=(32,34)).values().all()[:5]
-    jr3 = Dht.objects.all()[144:288]
+    jr3 = Dht.objects.all()[64:96]
     s3={'jr3':jr3}
     return render(request, 'jour3.html',s3)
 def data72Graphe(request):
-    tab=Dht.objects.all()[144:288]
+    tab=Dht.objects.all()[64:96]
     s3={'tab':tab}
     return render(request, 'grapheJr3.html',s3)
 #historique
